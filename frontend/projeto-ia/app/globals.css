@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme{
+  --color-button-red:#F04F4F;
+  --color-bg:#2E4482;
+  --color-asidechatbg:#0D1D48;
+  --color-chatbg:#2E4482;
+  --color-sections:#1E2B4D;
+  --color-grey:rgba(0, 0, 0, 0.70);
+  --color-red-red:rgba(181, 58, 58, 1);
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-Thin.ttf');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./assets/fonts/Gilroy-Bold.ttf');
+  font-weight: 700;
+}
+
+@layer utilities {
+  .placeholder-style::placeholder {
+     padding: 5px 12px;
+     margin: 5px;
+  }
+}
+.bg-hero {
+  background-image: url('../imgs/Rectangle.png');
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a23;
+    --foreground: #ededed;
+  }
+}
+
+.font{
+  font-family: 'Gilroy', sans-serif;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.scroll-stable {
+  scrollbar-gutter: stable;
+}
